@@ -4,21 +4,24 @@ const app = express();
 
 app.use(express.json());
 
+//array of courses
 const courses = [
     {id: 1, name: 'course1'},
     {id: 2, name: 'course2'},
     {id: 3, name: 'course3'},
 ];
 
-
+// GET request to show information is accessible
 app.get('/', (req, res) => {
      res.send('Hello World!!');
 });
 
+// GET request to show all courses
 app.get('/api/courses', (req, res) => {
     res.send(courses);
 });
 
+// GET request to show a specific course
 app.post('/api/courses', (req, res)=> {
     
     //getting error message
@@ -35,6 +38,7 @@ app.post('/api/courses', (req, res)=> {
     res.send(course);
 });
 
+// Put request to update a course
 app.put('/api/courses/:id', (req, res) => {
     
     const course = courses.find(c => c.id === parseInt(req.params.id));
@@ -55,7 +59,7 @@ app.put('/api/courses/:id', (req, res) => {
 
 });
 
-
+// Get request to show a specific course
 app.get('/api/courses/:id', (req, res) => {
     //finding if course exists or not
     const course = courses.find(c => c.id === parseInt(req.params.id));
@@ -90,6 +94,7 @@ function validateCourse(course) {
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}.`));
 
+// Delete request to delete a course
 app.delete('/api/courses/:id', (req, res) => {
     //finding if course exists or not
     const course = courses.find(c => c.id === parseInt(req.params.id));
