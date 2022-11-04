@@ -27,7 +27,6 @@ app.post('/api/courses', (req, res)=> {
         res.status(400).send(result.error.details[0].message);
         return;
     }
-    
     const course = {
         id: courses.length + 1,
         name: req.body.name
@@ -41,6 +40,15 @@ app.put('/api/courses/:id', (req, res) => {
     const course = courses.find(c => c.id === parseInt(req.params.id));
     if(!course) res.status(404).send('The course with the given ID was not found.');
 
+    //getting error message
+    const {error} = validateCourse(req.body);
+    if(error) {
+        res.status(400).send(result.error.details[0].message);
+        return;
+    }
+
+    course.name = req.body.name;
+    res.send(course);
 
 });
 
