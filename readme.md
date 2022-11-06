@@ -12,5 +12,5 @@
 [![MySQL](https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png)](https://www.mysql.com/)
 
 
-<img src="http://3con14.biz/code/_data/js/intro/js-logo.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript" alt="JS" width="200"/>
+<img src="http://3con14.biz/code/_data/js/intro/js-logo.png" alt="JS" width="200"/>
 <img src="https://github.com/MarioTerron/logo-images/blob/master/logos/expressjs.png" alt="express" width="200"/>
