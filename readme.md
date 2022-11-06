@@ -1,3 +1,18 @@
-# Simple Course RestAPI made with Express
+# Cities
 
-#### Used joi package library for input validation
+## REST API for getting Canadian cities and their provinces in json,csv, or xml
+
+
+# Built with:
+
+[![JavaScript](http://3con14.biz/code/_data/js/intro/js-logo.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![ExpressJS](https://github.com/MarioTerron/logo-images/blob/master/logos/expressjs.png)](http://expressjs.com///)
+[![npm](https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
+<a href="node.js/standard/454x128.png"><img height=48 src="node.js/standard/454x128.png" alt="node.js standard"></a>
+
+
+<img
+src= "https://carbon.now.sh/?bg=rgba%2882%2C134%2C178%2C1%29&t=hopscotch&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%257B%250A%2509%2522message%2522%253A%2520%2522Cities%2520fetched%2520successfully%2522%250A%2520%2520%2509%2522error%2522%253A%2520false%250A%2520%2520%2509%2522results%2522%253A%2520%255B%250A%2520%2520%2509%2509%257B%250A%2520%2520%2509%2509%2509%2522code%2522%253A%25202%252C%250A%2520%2520%2509%2509%2509%2522name%2522%253A%2520%2522Toronto%2522%250A%2520%2520%2509%2509%2509%2522province%2522%253A%2520%2522ON%2522%250A%2509%2509%257D%252C%250A%2509%2509%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2522code%2522%253A%252038%252C%250A%2520%2520%2509%2509%2509%2522name%2522%253A%2520%2522Halifax%2522%250A%2520%2520%2509%2509%2509%2522province%2522%253A%2520%2522NS%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2509%2509...%250A%2520%2520%2509%255D%250A%257D%250A"
+
+alt="code block">
+
