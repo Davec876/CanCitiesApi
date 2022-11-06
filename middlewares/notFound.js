@@ -1,6 +1,6 @@
 const {
     error
-} = require('../utils/response');
+} = require('../utils/apiResponse');
 
 const notFound = (req, res, next) => {
     const error = new Error(`Not Found - ${req.originalUrl}`);
