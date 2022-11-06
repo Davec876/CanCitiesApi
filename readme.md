@@ -41,4 +41,4 @@ GET /api/districts/{cityID}?format=csv
 ```
 
 # Author
-Copyright © 2022, Davec876. Released under MIT License
+Copyright © 2022, Davec876
