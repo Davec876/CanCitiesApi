@@ -30,13 +30,13 @@ GET /api/cities?format=csv
 
 ## Provinces
 ```js
-# with json format
+# json format
 GET /api/provinces/{cityId}?format=json
 
-# with xml format
+# xml format
 GET /api/provinces/{cityId}?format=xml
 
-# with csv format
+# csv format
 GET /api/provinces/{cityI}?format=csv
 ```
 
