@@ -1,18 +1,18 @@
-const express = require('express');
-const morgan = require('morgan');
-const helmet = require('helmet');
-const bodyParser = require('body-parser');
+// const express = require('express');
+// const morgan = require('morgan');
+// const helmet = require('helmet');
+// const bodyParser = require('body-parser');
 
-require('dotenv').config();
+// require('dotenv').config();
 
-const app = express();
-const monk = require('monk');
+// const app = express();
+// const monk = require('monk');
 
-app.use(helmet());
-app.use(morgan('dev'));
-app.use(bodyParser.json());
+// app.use(helmet());
+// app.use(morgan('dev'));
+// app.use(bodyParser.json());
 
-const port = process.env.PORT || 8889;
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+// const port = process.env.PORT || 8889;
+// app.listen(port, () => {
+//   console.log(`Listening on port ${port}`);
+// });

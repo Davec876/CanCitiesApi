@@ -1,11 +1,11 @@
-const monk = require('monk');
+// const monk = require('monk');
 
-let dbUrl = process.env.DB_URL;
+// let dbUrl = process.env.DB_URL;
 
-if (process.env.NODE_ENV === 'test') {
-  dbUrl = process.env.TEST_DB_URL;
-}
+// if (process.env.NODE_ENV === 'test') {
+//   dbUrl = process.env.TEST_DB_URL;
+// }
 
-const db = monk(dbUrl);
+// const db = monk(dbUrl);
 
-module.exports = db;
+// module.exports = db;
