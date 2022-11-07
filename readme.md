@@ -41,4 +41,4 @@ GET /api/provinces/{cityI}?format=csv
 ```
 
 # Author
-Copyright © 2022, Davec876
+Copyright &copy; 2022, Davec876
