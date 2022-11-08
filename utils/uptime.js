@@ -10,7 +10,7 @@ module.exports = uptime => {
         hours = date.getUTCHours(),
         minutes = date.getUTCMinutes(),
         seconds = date.getUTCSeconds()
-
+    //return the uptime in the format of days, hours, minutes, seconds
     let segments = []
 
     if (days > 0){

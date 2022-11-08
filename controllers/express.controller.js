@@ -15,7 +15,6 @@ module.exports = {
             )
             return
         }
-
         try {
             res.status(200).json(
                 success("It works!", {
@@ -42,7 +41,7 @@ module.exports = {
         if(format !== 'json' && format !== 'xml' && format !== 'csv'){
             return res.status(200).send('Invalid format selected.')
         }
-
+        //try catch block for error handling on the chosen format
         try {
             let data = null
 
@@ -88,7 +87,7 @@ module.exports = {
         if(format !== 'json' && format !== 'xml' && format !== 'csv'){
             return res.status(200).send('Invalid format selected.')
         }
-
+        //try catch block for error handling on the chosen format
         try {
             let data = null
 

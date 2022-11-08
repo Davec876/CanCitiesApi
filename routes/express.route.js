@@ -1,5 +1,6 @@
 const router = require('express').Router();
 
+//calling the controllers 
 const {
     alive,
     getAllCities,

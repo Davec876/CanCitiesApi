@@ -13,6 +13,7 @@ const rateLimit = require('./middlewares/limit')
 const logger = require('./utils/logger')
 const app = express()
 
+// Middlewares http logger and response time
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
@@ -29,11 +30,13 @@ app.use('/api', require('.routes/express.route'))
 
 app.use(require('./middlewares/notFound'))
 
+// Checking if the api is running or not on the correct port or port 3000 specified if not then it will throw an error
 const port = process.env.PORT || 3000
 const server = app.listen(port, () => {
     logger.info(`Server is running on port ${port} with process id ${process.pid}`)
 })
 
+// Handling unhandled promise rejections
 process.on('SIGINT', () => {
     logger.info('SIGINT signal received: closing HTTP server')
     server.close(() => {
@@ -41,7 +44,7 @@ process.on('SIGINT', () => {
         process.exit(0)
     })
 })
-
+// Handling unhandled promise rejections
 process.on('SIGTERM', () => {
     logger.info('SIGTERM signal received: Server is closed')
     server.close(() => {
