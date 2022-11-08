@@ -15,6 +15,7 @@ module.exports = {
             )
             return
         }
+        //try cactch block for error handling
         try {
             res.status(200).json(
                 success("It works!", {
